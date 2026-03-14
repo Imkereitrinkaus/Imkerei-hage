@@ -18,7 +18,7 @@ const siteContent = {
     name: "Bienen Honig",
     nameDetail: "aus eigener Imkerei",
     location: "Bochum-Eppendorf",
-    slogan: "Echter Honig. Kleiner Garten. Große Sorgfalt.",
+    slogan: "Eppendorfer Honig. Kleiner Garten. Große Sorgfalt.",
     sloganSub: "Hobby-Imkerei aus Wattenscheid-Eppendorf",
     metaDescription: "Regionaler Honig aus eigener Hobby-Imkerei in Wattenscheid-Eppendorf. Frühtracht und Sommertracht – direkt vom Imker, nach Vereinbarung abholbar.",
   },
@@ -41,7 +41,7 @@ const siteContent = {
   // HERO-BEREICH (große Startfläche)
   // ----------------------------------------------------------
   hero: {
-    title: "Honig aus dem Garten.",
+    title: "Honig aus meinem Garten und Umgebung.",
     titleHighlight: "Ehrlich & regional.",
     text: "Ich imkere in meinem Garten in Wattenscheid-Eppendorf – mit viel Geduld, wenig Technik und echter Freude an den Bienen. Wer meinen Honig möchte, meldet sich einfach.",
     primaryButton: "Jetzt anfragen",
@@ -60,7 +60,7 @@ const siteContent = {
     subline: "Eine kleine Imkerei im Ruhrgebiet.",
     paragraphs: [
       "Imkerei ist für mich kein Erwerb – sondern eine Leidenschaft. Seit einigen Jahren halten wir Bienen in unserem Garten in Wattenscheid-Eppendorf und erleben jede Saison aufs Neue, was diese kleinen Tiere leisten.",
-      "Die Völker stehen im Grünen, sammeln in der Umgebung von Eppendorf, und ich verarbeite alles selbst: Schonend geschleudert, ohne Zusätze, direkt ins Glas. Keine industrielle Aufbereitung, kein Zukauf.",
+      "Die Völker stehen im Grünen, sammeln in der Umgebung von Eppendorf, und ich verarbeite alles selbst: Schonend geschleudert, direkt ins Glas. Keine industrielle Aufbereitung, kein Zukauf.",
       "Weil es eine Hobby-Imkerei ist, sind die Mengen begrenzt. Wer Honig haben möchte, meldet sich einfach – dann schauen wir gemeinsam, was gerade vorrätig ist.",
     ],
     image: "assets/images/imkerei-garten.jpg",
@@ -95,7 +95,7 @@ const siteContent = {
       subtitle: "Aromatischer Sommerhonig",
       size: "500g",
       price: 7.50,
-      description: "Der Sommertrachtshonig wird aus dem Nektar der Sommerblüte gewonnen – Linde, Phacelia, Kleearten und viele Wildblumen geben ihm seinen kräftigeren, vollmundigen Charakter. Er bleibt länger flüssig und hat eine schöne Bernsteinfarbe.",
+      description: "Der Sommertrachthonig wird aus dem Nektar der Sommerblüte gewonnen – Linde, Phacelia, Kleearten und viele Wildblumen geben ihm seinen kräftigeren, vollmundigen Charakter. Er bleibt länger flüssig und hat eine schöne Bernsteinfarbe.",
       image: "assets/images/glas-sommertracht.jpg",
       imageAlt: "500g Glas Sommertracht Honig aus Wattenscheid-Eppendorf",
       badge: "Sommer",
@@ -142,8 +142,8 @@ const siteContent = {
     images: [
       {
         src: "assets/images/galerie-1.jpg",
-        alt: "Honiggläser aus der Hobby-Imkerei Bochum-Eppendorf",
-        caption: "Frisch abgefüllt",
+        alt: "Honig im Hobbock aus der Hobby-Imkerei Bochum-Eppendorf",
+        caption: "Vor der Abfüllung",
       },
       {
         src: "assets/images/galerie-2.jpg",
@@ -181,9 +181,9 @@ const siteContent = {
     subline: "Einfach melden – ich antworte persönlich.",
     intro: "Wer Honig bestellen oder einfach mal nachfragen möchte, schreibt mir eine Nachricht oder ruft an. Abholung ist nach Vereinbarung direkt hier in Eppendorf möglich.",
     // TODO: Echte Kontaktdaten vor Veröffentlichung eintragen:
-    phone: "[Telefonnummer]",
-    email: "[E-Mail-Adresse]",
-    address: "[Straße und Hausnummer], [PLZ] Bochum-Eppendorf",
+    phone: "02327-780630",
+    email: "g.bew@arcor.de",
+    address: "Gartenstr. 89, 44869 Bochum-Eppendorf",
     pickupInfo: "Abholung nach Vereinbarung – einfach vorab melden.",
     hours: "Erreichbar: In der Regel tagsüber per Telefon oder jederzeit per E-Mail.",
   },
