@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="" /><!-- Wird durch render-content.js befüllt -->
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:locale"      content="de_DE" />
+  <meta property="og:title"       content="" /><!-- Wird durch render-content.js befüllt -->
+  <meta property="og:description" content="" /><!-- Wird durch render-content.js befüllt -->
+  <meta property="og:image"       content="assets/images/hero-honig.jpg" />
+
+  <title>Bienen Honig – Wattenscheid-Eppendorf</title><!-- Wird durch render-content.js überschrieben -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- Favicon (Text-Emoji als Platzhalter) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍯</text></svg>" />
+</head>
+<body>
+
+  <!-- Skip-Link für Barrierefreiheit -->
+  <a class="skip-link" href="#main">Direkt zum Inhalt springen</a>
+
+  <!-- ============================================================
+       HEADER / NAVIGATION
+       ============================================================ -->
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Hauptnavigation">
+
+      <a href="#" class="nav__brand" aria-label="Zur Startseite">
+        <span class="nav__brand-name">Bienen <span>Honig</span></span>
+        <span class="nav__brand-sub">Wattenscheid-Eppendorf</span>
+      </a>
+
+      <!-- Desktop-Links (werden durch JS befüllt) -->
+      <ul class="nav__links" role="list" aria-label="Navigation"></ul>
+
+      <!-- Mobile Menü-Button -->
+      <button class="nav__toggle"
+              type="button"
+              aria-label="Menü öffnen"
+              aria-expanded="false"
+              aria-controls="mobile-nav">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+    </nav>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <nav class="nav__mobile" id="mobile-nav" aria-label="Mobile Navigation"></nav>
+
+  <!-- ============================================================
+       HAUPTINHALT
+       ============================================================ -->
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__text">
+            <div class="hero__badge">🐝 <span>Hobby-Imkerei · Wattenscheid-Eppendorf</span></div>
+            <h1 class="hero__title" id="hero-title">
+              Honig aus dem Garten.
+              <span class="hero__title-highlight">Ehrlich &amp; regional.</span>
+            </h1>
+            <p class="hero__desc">
+              Ich imkere in meinem Garten in Wattenscheid-Eppendorf – mit viel Geduld,
+              wenig Technik und echter Freude an den Bienen.
+            </p>
+            <div class="hero__actions">
+              <a href="#kontakt" class="btn btn--primary hero__btn-primary">Jetzt anfragen</a>
+              <a href="#ueber"   class="btn btn--secondary hero__btn-secondary">Mehr erfahren</a>
+            </div>
+          </div>
+          <div class="hero__image-wrap" aria-hidden="true">
+            <div class="hero__image-glow"></div>
+            <img
+              src="assets/images/hero-honig.jpg"
+              alt="Honigglas aus der Hobby-Imkerei Wattenscheid-Eppendorf"
+              class="hero__image"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">Scroll</div>
+    </section>
+
+    <!-- ÜBER DIE IMKEREI -->
+    <section id="ueber" class="section section--white" aria-labelledby="about-headline">
+      <div class="container">
+        <div class="about__grid">
+
+          <div class="about__image-wrap">
+            <img
+              src="assets/images/imkerei-garten.jpg"
+              alt="Bienenstock im Garten der Imkerei in Wattenscheid-Eppendorf"
+              class="about__image"
+              loading="lazy"
+            />
+            <div class="about__image-accent" aria-hidden="true"></div>
+          </div>
+
+          <div class="about__text-content">
+            <span class="about__label">Bochum-Eppendorf</span>
+            <h2 class="about__headline" id="about-headline">Hinter dem Glas</h2>
+            <p class="about__subline">Eine kleine Imkerei im Ruhrgebiet.</p>
+            <div class="about__text"><!-- Paragraphen durch JS eingefügt --></div>
+            <div class="about__facts"><!-- Fakten durch JS eingefügt --></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- UNSER HONIG -->
+    <section id="honig" class="section section--cream" aria-labelledby="products-headline">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-header__headline" id="products-headline">Unser Honig</h2>
+          <span class="divider" aria-hidden="true"></span>
+          <p class="section-header__subline">Zwei Sorten, eine Quelle – der eigene Garten.</p>
+        </div>
+        <div class="products__grid"><!-- Produktkarten durch JS eingefügt --></div>
+      </div>
+    </section>
+
+    <!-- QUALITÄT -->
+    <section id="qualitaet" class="section section--dark" aria-labelledby="quality-headline">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-header__headline quality__headline" id="quality-headline">So entsteht der Honig</h2>
+          <span class="divider" aria-hidden="true"></span>
+          <p class="section-header__subline quality__subline">Ehrliche Verarbeitung, keine Kompromisse.</p>
+        </div>
+        <div class="quality__grid"><!-- Qualitätskarten durch JS eingefügt --></div>
+      </div>
+    </section>
+
+    <!-- GALERIE -->
+    <section id="galerie" class="section section--white" aria-labelledby="gallery-headline">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-header__headline" id="gallery-headline">Einblicke</h2>
+          <span class="divider" aria-hidden="true"></span>
+          <p class="section-header__subline">Aus dem Garten direkt ins Glas.</p>
+        </div>
+        <div class="gallery__grid" role="list" aria-label="Bildergalerie">
+          <!-- Galeriebilder durch JS eingefügt -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-label="Bild in Vollansicht" aria-modal="true">
+      <img src="" alt="" id="lightbox-img" class="lightbox__image" />
+      <button class="lightbox__close" id="lightbox-close" aria-label="Vollansicht schließen">✕</button>
+    </div>
+
+    <!-- ANFRAGE / KONTAKT -->
+    <section id="kontakt" class="section section--cream" aria-labelledby="contact-headline">
+      <div class="container">
+        <div class="contact__grid">
+
+          <!-- Kontaktinfo -->
+          <div class="contact__info">
+            <span class="contact__info-label">Direktkontakt</span>
+            <h2 class="contact__headline" id="contact-headline">Anfrage &amp; Abholung</h2>
+            <p class="contact__info-intro">
+              Einfach melden – ich antworte persönlich.
+            </p>
+            <div class="contact__details"><!-- Kontaktdetails durch JS eingefügt --></div>
+          </div>
+
+          <!-- Bestellformular -->
+          <div class="order-form" role="region" aria-label="Bestellanfrage">
+            <h3 style="margin-bottom:var(--space-6);font-size:var(--text-xl);">Anfrage stellen</h3>
+
+            <form id="order-form" novalidate>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label form-label--required" for="order-name">Name</label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="order-name"
+                    name="name"
+                    autocomplete="name"
+                    required
+                    placeholder="Dein Name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="form-label form-label--required" for="order-email">E-Mail</label>
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="order-email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                    placeholder="deine@email.de"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="order-phone">Telefon <span style="color:var(--color-text-muted);font-weight:400;">(optional)</span></label>
+                <input
+                  class="form-input"
+                  type="tel"
+                  id="order-phone"
+                  name="phone"
+                  autocomplete="tel"
+                  placeholder="+49 234 …"
+                />
+              </div>
+
+              <div class="form-group">
+                <p class="form-label" id="products-label">Gewünschte Mengen</p>
+                <div id="order-products" class="order-products" role="group" aria-labelledby="products-label">
+                  <!-- Produktmengen durch order-form.js eingefügt -->
+                </div>
+              </div>
+
+              <div class="order-total" role="status" aria-live="polite">
+                <span class="order-total__label">Gesamtbetrag (ca.)</span>
+                <span class="order-total__amount" id="order-total-amount">0,00&nbsp;€</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="order-message">Nachricht <span style="color:var(--color-text-muted);font-weight:400;">(optional)</span></label>
+                <textarea
+                  class="form-textarea"
+                  id="order-message"
+                  name="message"
+                  rows="4"
+                  placeholder="Fragen, Abholwünsche oder sonstige Hinweise …"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full">
+                Anfrage zusammenstellen →
+              </button>
+
+            </form>
+
+            <!-- Anfrage-Ergebnis -->
+            <div id="form-result" class="form-result" role="alert" aria-live="polite"></div>
+
+            <!-- Zusammenfassung -->
+            <div id="order-summary-box" class="order-summary-box" aria-live="polite">
+              <pre id="order-summary-text"></pre>
+            </div>
+
+            <!-- Aktionen nach Submit -->
+            <div id="order-summary-actions" class="order-summary-actions" style="display:none;">
+              <button type="button" id="btn-copy" class="btn btn--ghost btn--sm">
+                Anfrage kopieren
+              </button>
+              <a id="btn-mailto" href="#" class="btn btn--outline btn--sm">
+                Per E-Mail senden
+              </a>
+            </div>
+
+          </div><!-- /order-form -->
+
+        </div><!-- /contact__grid -->
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section--white" aria-labelledby="faq-headline">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-header__headline faq__headline" id="faq-headline">Häufige Fragen</h2>
+          <span class="divider" aria-hidden="true"></span>
+          <p class="section-header__subline faq__subline">Kurze Antworten auf das, was viele wissen möchten.</p>
+        </div>
+        <div class="faq__list" role="list"><!-- FAQ durch JS eingefügt --></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div>
+          <p class="footer__brand-name">Bienen <span>Honig</span></p>
+          <p class="footer__tagline">Echter Honig aus Wattenscheid-Eppendorf.</p>
+        </div>
+
+        <nav aria-label="Rechtliche Links">
+          <span class="footer__nav-label">Rechtliches</span>
+          <ul class="footer__nav-links" role="list">
+            <!-- Durch JS eingefügt -->
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy"><!-- Durch JS eingefügt --></p>
+        <p class="footer__copy">Keine Gewerblichkeit · Hobby-Imkerei</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       JAVASCRIPT — Reihenfolge wichtig!
+       ============================================================ -->
+  <!-- 1. Inhaltsdaten laden -->
+  <script src="js/site-content.js"></script>
+  <!-- 2. Inhalte rendern -->
+  <script src="js/render-content.js"></script>
+  <!-- 3. Formularlogik -->
+  <script src="js/order-form.js"></script>
+  <!-- 4. UI / Navigation -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
